@@ -36,5 +36,17 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  
+  # Header
+  s.subspec 'BOCeRefreshHeader' do | header |
+  header.source_files = 'BOCeRefresh/Classes/BOCeRefreshHeader/*.{h,m}'
+  end
+  
+  # Footer
+  s.subspec 'BOCeRefreshFooter' do | footer |
+  footer.source_files = 'BOCeRefresh/Classes/BOCeRefreshFooter/*.{h,m}'
+  end
+  
   s.dependency 'MJRefresh', '~> 3.5.0'
+  
 end
